@@ -3,7 +3,7 @@ const router = require('express').Router();
 const restricted = require('../auth/authenticate-middleware.js');
 
 
-router.get('/', restricted, (req, res) => {
+router.get('/jokes', (req, res) => {
   const requestOptions = {
     headers: { accept: 'application/json' },
   };
